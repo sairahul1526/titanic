@@ -1,0 +1,69 @@
+GridLayout {
+	background-color: white;
+}
+
+
+.cardStyle {
+    background-color: #3489db;
+    color: #fff;
+}
+
+Image {
+    height: 1070;
+    border-radius: 15;
+}
+
+SwipeLayout {
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15;
+    margin: 15;
+    background-color: white;
+    background-position: center;
+}
+
+.head {
+    text-align: center;
+    vertical-align: middle;
+    font-size: 22;
+    color: crimson;
+    font-weight: bold;
+}
+
+.name {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 22;
+    color: white;
+    margin-left: 10;
+    margin-right: 10;
+    font-weight: bold;
+}
+
+.about {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18;
+    color: white;
+    margin-left: 10;
+    margin-right: 10;
+}
+
+.settings-button{
+    color: #395469;
+    background-color: #FFFFFF;
+    background-image: url("http://www.iconninja.com/files/701/376/1005/settings-setting-edit-configure-gear-icon.png");
+    background-repeat: no-repeat;
+    background-size: 160 160;
+    height: 56;
+    font-size: 16;
+}
+
+.chat-button{
+    color: #395469;
+    background-color: #FFFFFF;
+    background-image: url("http://www.iconninja.com/files/959/985/130/messages-chat-bubbles-comment-chatting-conversation-chat-bubbles-icon.png");
+    background-repeat: no-repeat;
+    background-size: 130 130;
+    height: 56;
+    font-size: 16;
+    background-position: 190 10;
+}

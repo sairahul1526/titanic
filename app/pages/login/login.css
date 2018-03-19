@@ -1,0 +1,39 @@
+StackLayout {
+	margin: 30;
+	background-color: white;
+}
+
+.header {
+	font-size: 25;
+	font-family: sans-serif;
+	color: #4D4D4D;
+	white-space: normal;
+	text-align:center;
+}
+
+GridLayout {
+	margin-top: 30;
+}
+
+.loginBtn {
+    background-color: #4C69BA;
+    background-image: linear-gradient(to right, #413799, #2173B9);
+    text-shadow: 0 -1 0 #354C8C;
+    position: relative;
+    border: none;
+    text-align: center;
+    line-height: 12;
+    font-size: 17;
+	color: #FFF;
+	margin-top: 30;
+	margin-bottom: 30;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.footer {
+    font-size: 13;
+    font-family: sans-serif;
+	color: #C3C9D0;
+	white-space: normal;
+	text-align:center;
+}

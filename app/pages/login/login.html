@@ -1,0 +1,7 @@
+<StackLayout *ngIf="!loggedIn">
+    <Label *ngIf="!loggedIn" text='Discover new and interesting people nearby.' class="header"></Label>
+    <GridLayout *ngIf="!loggedIn" [carousel]="images" carouselLabelOverlay="true" carouselArrows="none" carouselSpeed="2000">
+    </GridLayout>
+    <Button *ngIf="!loggedIn" text='LOG IN WITH FACEBOOK' class="loginBtn" (tap)="login()"></Button>
+    <Label *ngIf="!loggedIn" text='We dont post anything to Facebook. By singing in, you agree to our Terms of Service and privacy policy' class="footer"></Label>
+</StackLayout>

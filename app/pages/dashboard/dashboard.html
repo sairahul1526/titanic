@@ -1,0 +1,18 @@
+<StackLayout orientation="vertical">
+    <GridLayout columns="*,*,*" rows="auto">
+        <Button row="0" col="0" class="settings-button" (tap)="settings()"></Button>
+        <Label class="head" text="TITANIC" row="0" col="1"></Label>
+        <Button row="0" col="2" class="chat-button" (tap)="chat()"></Button>
+    </GridLayout>
+    
+    <GridLayout rows="*, auto" columns="*">
+        <SwipeLayout *ngFor="let card of cards" row="0" [backgroundImage]="card.img" colSpan="3" col="0" (loaded)="swipeLayoutLoaded($event)" (swipeDown)="swipeDownCallback($event)" (swipeUp)="swipeUpCallback($event)" (swipeRight)="swipeRightCallback($event)" (swipeLeft)="swipeLeftCallback($event)" [animationState]="swipeLayoutAnimated" [gestureMode]="gestureMode">
+            <AbsoluteLayout>
+                <Gradient left="0" top="490" height="90" width="385" direction="to top" colors="#000000, #000000, #00FFFFFF">
+                    <Label class="name" [text]="card.name + ', ' + card.age"></Label>
+                    <Label class="about" [text]="card.about"></Label>   
+                </Gradient>
+            </AbsoluteLayout>
+        </SwipeLayout>
+    </GridLayout>
+</StackLayout>
